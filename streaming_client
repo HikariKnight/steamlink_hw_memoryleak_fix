@@ -1,0 +1,3 @@
+#!/bin/sh
+streaming_client-bin "$@"
+shutdown -r now
