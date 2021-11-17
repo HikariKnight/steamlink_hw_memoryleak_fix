@@ -24,7 +24,8 @@ NOTE: failing to make this copy of the binary before step 4 will soft brick your
 3. Exit the ssh shell by typing `exit`
 4. Copy our script to the machine, make sure you have `cd` into the same directory as the streaming_client script from this repository, then run:<br/>
 `scp ./streaming_client root@steamlink:/home/steam/bin/streaming_client`
-5. Restart the steamlink, from now on, each time you start streaming your computer to the steam link and you finish streaming, the steamlink will do a reboot to clear it's memory (your wireless controller should still be connected after the reboot has finished)
+5. SSH back into the steamlink and make sure the script is executable `ssh root@steamlink` followed by `chmod +x /home/steam/bin/streaming_client`
+6. Restart the steamlink, from now on, each time you start streaming your computer to the steam link and you finish streaming, the steamlink will do a reboot to clear it's memory (your wireless controller should still be connected after the reboot has finished)
 
 ### Uninstallation
 1. SSH into your steamlink with `ssh root@steamlink` and type in the password `steamlink123`
