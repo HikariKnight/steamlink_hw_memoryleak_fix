@@ -19,7 +19,7 @@ Now that we have SSH enabled, we need to do a few things
 1. Connect to your steamlink using ssh from another computer `ssh root@steamlink` and the password `steamlink123` <br/>
 NOTE: If you need your steamlinks ip address, you can find it in your router. If you have no access to your router, you can use [nmap](https://nmap.org/download.html) to scan your network using the command `nmap -sn 192.168.1.2-254` and you can just try the ip addresses reported back to you.
 2. Run this command to make a backup of streaming_client since we will be replacing the binary, but we still need it accessible for our script <br/>
-`cp /home/steam/bin/streaming_client /home/steam/bin/streaming_client-bin`
+`cp /home/steam/bin/streaming_client /home/steam/bin/streaming_client-bin`<br>
 NOTE: failing to make this copy of the binary before step 4 will soft brick your steamlink!
 3. Exit the ssh shell by typing `exit`
 4. Copy our script to the machine, make sure you have `cd` into the same directory as the streaming_client script from this repository, then run:<br/>
